@@ -1,0 +1,20 @@
+{
+  "compilerOptions": {
+    "target": "ES5",
+    "strict": true,
+    "isolatedModules": true,
+    "module": "CommonJS",
+    "rootDir": "src",
+    "outDir": "build",
+    "declaration": true,
+    "allowJs": true,
+//    "importHelpers": true,
+    "lib": [
+      "DOM",
+      "ES2015"
+    ]
+  },
+  "include": [
+    "src"
+  ]
+}

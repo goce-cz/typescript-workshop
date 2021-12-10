@@ -1,0 +1,27 @@
+{
+  "name": "typescript-workshop",
+  "version": "1.0.0",
+  "description": "Materials for TypeScript workshop conducted in Salsita",
+  "scripts": {
+    "start": "ts-node-dev src/index.ts",
+    "watch": "tsc -b -w",
+    "build": "tsc -b"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/goce-cz/typescript-workshop.git"
+  },
+  "author": "goce@goce.cz",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/goce-cz/typescript-workshop/issues"
+  },
+  "homepage": "https://github.com/goce-cz/typescript-workshop#readme",
+  "devDependencies": {
+    "ts-node-dev": "^1.1.8",
+    "typescript": "^4.5.3"
+  },
+  "dependencies": {
+    "tslib": "^2.3.1"
+  }
+}
