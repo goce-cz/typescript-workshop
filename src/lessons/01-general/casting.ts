@@ -8,7 +8,7 @@ async function getMailingList (): Promise<string[]> {
   return engineers.map(engineer => engineer.email)
 }
 
-interface Manager {
+export interface Manager {
   name: string
   email: string
   teamSize: number

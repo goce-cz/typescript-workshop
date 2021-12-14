@@ -40,7 +40,6 @@ function pad4 (
 
 pad4('124')
 
-
 declare const personWithNullableEmail: {
   name: string
   email: string | null
@@ -53,7 +52,6 @@ const {
 
 // @ts-ignore
 console.log(email.toLowerCase())
-
 
 declare const sparseTuple: [string | undefined, number | null, boolean]
 const [str = 'default', num = 1, bool = false] = sparseTuple

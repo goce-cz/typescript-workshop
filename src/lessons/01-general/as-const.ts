@@ -10,7 +10,6 @@ let carl = {
   surname: 'Carlson'
 } as const
 
-
 person = {
   firstname: 'Lenny',
   surname: 'Leonard'
@@ -26,7 +25,6 @@ carl = {
 
 // @ts-ignore
 carl = person
-
 
 const array = ['x', 1, false]
 const tuple = ['x', 1, false] as const

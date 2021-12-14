@@ -1,8 +1,8 @@
 export = {}
 
-declare const stringVar:  string
+declare const stringVar: string
 declare const booleanVar: boolean
-declare const numberVar:  number
+declare const numberVar: number
 
 declare const voidVar: void
 declare const nullVar: null
@@ -15,7 +15,6 @@ console.log(anyVar.abraka)
 // @ts-ignore
 console.log(unknownVar.abraka)
 
-
 declare const objectVar: {
   firstname: string
   middleName?: string
@@ -25,4 +24,4 @@ declare const objectVar: {
 }
 
 declare const arrayVar1: string[]
-declare const arrayVar2: Array<{name: string}>
+declare const arrayVar2: Array<{ name: string }>

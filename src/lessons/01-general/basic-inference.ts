@@ -10,8 +10,8 @@ export const array = [
   'string'
 ]
 
-function doSomething() {
-  if(Math.random() < 0.5) {
+function doSomething () {
+  if (Math.random() < 0.5) {
     return null
   }
 
@@ -20,7 +20,6 @@ function doSomething() {
     surname: 'Carlson'
   }
 }
-
 
 console.log(object.world)
 

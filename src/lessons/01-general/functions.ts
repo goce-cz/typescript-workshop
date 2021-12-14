@@ -21,7 +21,7 @@ const createEngineer = (name: string, role: EngineeringRole = EngineeringRole.FS
   email: `${name}@salsitasoft.com`
 })
 
-function join(array: string[], glue?: string) {
+function join (array: string[], glue?: string) {
   return glue === undefined
     ? array.join(glue)
     : array.join('')
