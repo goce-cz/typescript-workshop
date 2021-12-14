@@ -4,4 +4,6 @@
 1. [functions](functions.ts)
 1. [interface vs. type](interface-vs-type.ts)
 1. [transpilation](transpilation.ts)
-1. [typing legacy JS code](legacy.d.ts)
+1. [typing legacy JS code](legacy.js)
+1. [casting](casting.ts)
+1. [as const](as-const.ts)

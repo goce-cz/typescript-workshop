@@ -15,11 +15,17 @@ function getEngineerSignature (engineer: Engineer): string {
   return `<${engineer.name} - ${engineer.role}> ${engineer.email}`
 }
 
-const createEngineer = (name: string, role: EngineeringRole): Engineer => ({
+const createEngineer = (name: string, role: EngineeringRole = EngineeringRole.FS): Engineer => ({
   name,
   role,
   email: `${name}@salsitasoft.com`
 })
+
+function join(array: string[], glue?: string) {
+  return glue === undefined
+    ? array.join(glue)
+    : array.join('')
+}
 
 export async function fetchJson (url: string): Promise<any> {
   const response = await fetch(url)

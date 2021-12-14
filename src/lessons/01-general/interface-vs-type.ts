@@ -2,7 +2,7 @@ import { ExperienceLevel } from './transpilation'
 
 // plain objects
 
-interface PersonInterface {
+export interface PersonInterface {
   name: string
   age: number
 }
@@ -14,7 +14,7 @@ type PersonType = {
 
 // inheritance
 
-interface EmployeeInterface extends PersonInterface {
+export interface EmployeeInterface extends PersonInterface {
   level: ExperienceLevel
 }
 
@@ -27,7 +27,7 @@ const employee2: EmployeeType = employee1
 
 // reference recursion
 
-interface FamilyMemberInterface extends PersonInterface {
+export interface FamilyMemberInterface extends PersonInterface {
   parents: FamilyMemberInterface[]
 }
 
@@ -49,7 +49,7 @@ declare const familyMember: FamilyMemberInterface2
 
 // augmentation
 
-interface PersonInterface {
+export interface PersonInterface {
   height: number
 }
 
