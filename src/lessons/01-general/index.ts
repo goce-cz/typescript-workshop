@@ -1,4 +1,5 @@
-import './as-const'
-import './basic-inferrence'
-import './legacy'
 import './transpilation'
+import { capitalize } from './legacy'
+
+
+console.log(capitalize('typeScript intro'))

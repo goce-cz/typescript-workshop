@@ -1,15 +1,16 @@
-import { array } from './basic-inference'
-
-export function parseCsv (csvString: string): string[] {
-  return csvString.split(',')
+export function parseCsv (csvString: string): string[][] {
+  return csvString
+    .split(',')
+    .map(row => row.split(','))
 }
+
 export enum ExperienceLevel {
   JUNIOR,
   SENIOR,
   GURU
 }
 
-console.log(Object.keys(ExperienceLevel))
+console.log('indexed enum', Object.keys(ExperienceLevel), Object.values(ExperienceLevel))
 
 export enum EngineeringRole {
   QA = 'QA',
@@ -18,9 +19,11 @@ export enum EngineeringRole {
   FS = 'FS'
 }
 
+console.log('string enum', Object.keys(EngineeringRole), Object.values(EngineeringRole))
+
 interface WikiSearchResult {
   query: {
-    search: Array<{title: string}>
+    search: Array<{ title: string }>
   }
 }
 
