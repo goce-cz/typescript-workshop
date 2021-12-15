@@ -1,5 +1,3 @@
-export = {}
-
 declare const stringVar: string
 declare const booleanVar: boolean
 declare const numberVar: number
@@ -25,3 +23,5 @@ declare const objectVar: {
 
 declare const arrayVar1: string[]
 declare const arrayVar2: Array<{ name: string }>
+
+export = {}

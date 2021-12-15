@@ -1,4 +1,4 @@
-import { Engineer, fetchJson } from '../01-general-basics/functions'
+import { Engineer, fetchJson } from '../01-basics/functions'
 
 async function getMailingList (): Promise<string[]> {
   const response = await fetchJson('/employees')

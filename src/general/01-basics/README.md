@@ -9,3 +9,4 @@
 1. [arrays](arrays.ts)
 1. [transpilation](transpilation.ts)
 1. [typing legacy JS code](legacy.js)
+1. [modules](modules.ts)

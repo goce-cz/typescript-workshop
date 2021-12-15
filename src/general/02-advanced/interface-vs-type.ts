@@ -1,4 +1,4 @@
-import { ExperienceLevel } from '../01-general-basics/transpilation'
+import { ExperienceLevel } from '../01-basics/transpilation'
 
 // plain objects
 

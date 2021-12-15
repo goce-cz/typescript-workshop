@@ -21,7 +21,7 @@ export enum EngineeringRole {
 
 console.log('string enum', Object.keys(EngineeringRole), Object.values(EngineeringRole))
 
-interface WikiSearchResult {
+export interface WikiSearchResult {
   query: {
     search: Array<{ title: string }>
   }

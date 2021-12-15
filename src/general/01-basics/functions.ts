@@ -35,3 +35,5 @@ export async function fetchJson (url: string): Promise<any> {
     throw new Error(`server returned HTTP ${response.status} ${response.statusText}`)
   }
 }
+
+export default join

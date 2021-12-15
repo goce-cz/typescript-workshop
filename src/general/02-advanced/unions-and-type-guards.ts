@@ -1,5 +1,5 @@
 import { Manager } from './casting'
-import { Engineer } from '../01-general-basics/functions'
+import { Engineer } from '../01-basics/functions'
 
 export = {}
 
