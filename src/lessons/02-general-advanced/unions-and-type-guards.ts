@@ -1,5 +1,5 @@
-import { Engineer } from './functions'
 import { Manager } from './casting'
+import { Engineer } from '../01-general-basics/functions'
 
 export = {}
 
@@ -20,11 +20,11 @@ type Employee = Engineer | Manager
 
 function getEmployeeSignature1 (employee: Employee): string {
   return 'teamSize' in employee
-   ? `${employee.name} (manager of ${employee.teamSize} people)`
-   : `${employee.name} (${employee.role} engineer)`
+    ? `${employee.name} (manager of ${employee.teamSize} people)`
+    : `${employee.name} (${employee.role} engineer)`
 }
 
-function isManager(employee: Employee): employee is Manager {
+function isManager (employee: Employee): employee is Manager {
   return 'teamSize' in employee
 }
 
@@ -55,10 +55,11 @@ type Token = {
   operator: ComparisonOperator
 }
 
-declare function serializeValue(value: any, valueType: 'string' | 'number' | 'boolean'): string
-declare function serializeOperator(operator: ComparisonOperator): string
+declare function serializeValue (value: any, valueType: 'string' | 'number' | 'boolean'): string
 
-function serializeToken(token: Token) {
+declare function serializeOperator (operator: ComparisonOperator): string
+
+function serializeToken (token: Token) {
   switch (token.tokenType) {
     case 'keyword':
       return token.word

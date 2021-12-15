@@ -39,7 +39,9 @@ export class Dog implements Pet {
   }
 }
 
-let pet: Pet = new Cat('Garfield')
+let pet: Pet
+
+pet = new Cat('Garfield')
 pet = new Dog('Frankie')
 
 const speed = pet.callIn(2)
@@ -53,4 +55,9 @@ export class YorkshireTerrier extends Dog {
   callIn (decibels: number): number {
     return super.callIn(decibels) / 5
   }
+}
+
+pet = {
+  name: 'Tiddles',
+  callIn: decibels => decibels / 10
 }
