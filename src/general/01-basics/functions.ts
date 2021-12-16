@@ -23,8 +23,8 @@ const createEngineer = (name: string, role: EngineeringRole = EngineeringRole.FS
 
 function join (array: string[], glue?: string) {
   return glue === undefined
-    ? array.join(glue)
-    : array.join('')
+    ? array.join('')
+    : array.join(glue)
 }
 
 export async function fetchJson (url: string): Promise<any> {

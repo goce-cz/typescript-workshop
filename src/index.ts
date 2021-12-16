@@ -1,3 +1,3 @@
-import './lessons/01-general-basics/modules'
+import './general/01-basics/modules'
 
 

@@ -1,6 +1,6 @@
 export function parseCsv (csvString: string): string[][] {
   return csvString
-    .split(',')
+    .split('\n')
     .map(row => row.split(','))
 }
 
