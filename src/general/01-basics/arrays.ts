@@ -18,3 +18,13 @@ type IdAndNamesTuple = [number, ...string[]]
 declare const idAndNamesTuple: IdAndNamesTuple
 
 const [id2, mainName, ...otherNames] = idAndNamesTuple
+
+type ToggleState = [
+  value: boolean,
+  toggle: () => void,
+  set: (value: boolean) => void
+]
+
+declare function useToggleState (initialState: boolean): ToggleState
+
+const [enabled, toggleEnabled, setEnabled] = useToggleState(false)
